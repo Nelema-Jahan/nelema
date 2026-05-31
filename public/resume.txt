@@ -1,0 +1,53 @@
+NELEMA JAHAN
+===================
+
+CONTACT INFORMATION
+Email: your.email@example.com
+Phone: +880 XXXX XXXXXX
+LinkedIn: linkedin.com/in/your-profile
+GitHub: github.com/Nelema-Jahan
+
+PROFESSIONAL SUMMARY
+Full Stack Developer and Software Engineering student with expertise in creating web and mobile applications. 
+Passionate about solving complex problems through innovative technology solutions.
+
+EDUCATION
+Bachelor in Software Engineering
+Noakhali Science and Technology University (NSTU)
+
+TECHNICAL SKILLS
+Languages: JavaScript, Python, Java, Dart, C++
+Frontend: React, HTML, CSS, React Router, Lottie
+Backend: Node.js, Firebase
+Mobile: Flutter
+Databases: Firebase Firestore
+Tools: Git, GitHub, VS Code
+
+PROJECTS
+1. Shadow-Text
+   - Cryptography and steganography tool with AES encryption
+   - Hides encrypted messages inside images for secure communication
+
+2. NSTU Medical Center App
+   - Flutter-based healthcare application for university
+   - Modernized healthcare service delivery
+
+3. Connect 4
+   - Classic strategy board game implementation
+   - Interactive gameplay with win detection algorithm
+
+4. Vnure
+   - Venue booking portal for event management
+   - Browse, search, and book event venues
+
+5. SignBridge
+   - Real-time sign language communication tool for assistive care
+   - Bridges communication gap for diverse populations
+
+EXPERIENCE
+[Add your professional experience here]
+
+CERTIFICATIONS
+[Add any relevant certifications here]
+
+NOTE: This is a placeholder resume. Please replace with your actual resume file.

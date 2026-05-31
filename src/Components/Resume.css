@@ -1,0 +1,136 @@
+/* =====================
+   RESUME PAGE
+   ===================== */
+
+.ResumePage {
+  min-height: 100vh;
+  padding: 80px 20px;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slideInUp 0.8s ease-out;
+}
+
+.ResumeContainer {
+  max-width: 900px;
+  width: 100%;
+  background-color: var(--bg-secondary);
+  padding: 50px;
+  border-radius: 12px;
+  border-left: 4px solid var(--accent-primary);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* =====================
+   HEADER
+   ===================== */
+
+.ResumeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.ResumeHeader h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.ResumeTitle {
+  font-size: 16px;
+  color: var(--accent-primary);
+  margin: 8px 0 0 0;
+  font-weight: 600;
+}
+
+.DownloadBtn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.DownloadBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(144, 103, 198, 0.3);
+  background-color: var(--accent-secondary);
+}
+
+/* =====================
+   ANIMATIONS
+   ===================== */
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+
+@media (max-width: 768px) {
+  .ResumeContainer {
+    padding: 30px 20px;
+  }
+
+  .ResumeHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ResumeHeader h1 {
+    font-size: 32px;
+  }
+
+  .DownloadBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .ResumePage {
+    padding: 60px 15px;
+    margin-top: 80px;
+  }
+
+  .ResumeContainer {
+    padding: 20px 15px;
+    border-radius: 8px;
+  }
+
+  .ResumeHeader h1 {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+  }
+
+  .ResumeTitle {
+    font-size: 14px;
+  }
+
+  .DownloadBtn {
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+}

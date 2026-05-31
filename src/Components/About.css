@@ -1,0 +1,504 @@
+/* =====================
+   ABOUT PAGE CONTAINER
+   ===================== */
+
+.AboutPageContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px 20px;
+  animation: slideInUp 0.8s ease-out;
+}
+
+/* =====================
+   MAIN SPLIT LAYOUT
+   ===================== */
+
+.AboutMainSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 80px;
+  animation: slideInUp 0.8s ease-out 0.1s both;
+}
+
+/* LEFT COLUMN - Avatar & Social */
+.AboutLeftColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.AvatarContainer {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 50px rgba(144, 103, 198, 0.2);
+  padding: 10px;
+  animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.AvatarAnimation {
+  width: 100%;
+  height: 100%;
+}
+
+.AboutName {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 15px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.LocationInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.LocationIcon {
+  color: var(--accent-primary);
+  font-size: 18px;
+}
+
+/* Social Links */
+.SocialLinks {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.SocialButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  border: 2px solid var(--accent-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-primary);
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.SocialButton:hover {
+  background-color: var(--accent-primary);
+  color: var(--bg-primary);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(144, 103, 198, 0.3);
+}
+
+/* RIGHT COLUMN - Bio & Button */
+.AboutRightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  animation: slideInRight 0.8s ease-out 0.2s both;
+}
+
+.AboutHeading {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.5px;
+}
+
+.AboutHeading::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 2px;
+}
+
+.AboutBio {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+/* Button styling reusing from Home */
+.btn {
+  align-self: flex-start;
+  width: fit-content;
+}
+
+/* =====================
+   EDUCATION SECTION
+   ===================== */
+
+.EducationSection {
+  margin-bottom: 80px;
+  animation: slideInUp 0.8s ease-out 0.3s both;
+}
+
+.SectionTitle {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.SectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 2px;
+}
+
+.TimelineContainer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 50px;
+  padding: 40px 20px;
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  border-left: 3px solid var(--accent-primary);
+  animation: fadeIn 0.8s ease-out 0.4s both;
+}
+
+.TimelineCard {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: var(--bg-tertiary);
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.TimelineCard:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+  box-shadow: 0 10px 25px rgba(144, 103, 198, 0.15);
+}
+
+.TimelineIcon {
+  font-size: 40px;
+  min-width: 50px;
+}
+
+.TimelineContent h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.TimelineSchool {
+  font-size: 14px;
+  color: var(--accent-primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.TimelineStatus {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  background-color: var(--bg-secondary);
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.TimelineConnector {
+  width: 3px;
+  height: 80px;
+  background: linear-gradient(180deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 2px;
+}
+
+.TimelineYear {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.TimelineProgress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.OngoingBadge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #00ff00;
+  background-color: rgba(0, 255, 0, 0.1);
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid #00ff00;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* =====================
+   QUICK STATS SECTION
+   ===================== */
+
+.QuickStatsSection {
+  margin-top: 80px;
+  animation: slideInUp 0.8s ease-out 0.4s both;
+}
+
+.StatsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.StatCard {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  animation: fadeIn 0.8s ease-out both;
+}
+
+.StatCard:nth-child(1) { animation-delay: 0.5s; }
+.StatCard:nth-child(2) { animation-delay: 0.6s; }
+.StatCard:nth-child(3) { animation-delay: 0.7s; }
+.StatCard:nth-child(4) { animation-delay: 0.8s; }
+
+.StatCard:hover {
+  background-color: var(--bg-tertiary);
+  border-color: var(--accent-primary);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(144, 103, 198, 0.2);
+}
+
+.StatIcon {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.StatCard h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.StatCard p {
+  font-size: 13px;
+  color: var(--text-tertiary);
+}
+
+/* =====================
+   ANIMATIONS
+   ===================== */
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+   ===================== */
+
+@media (max-width: 900px) {
+  .AboutPageContainer {
+    margin: 60px auto;
+    padding: 30px 20px;
+  }
+
+  .AboutMainSection {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+  }
+
+  .AvatarContainer {
+    width: 240px;
+    height: 240px;
+  }
+
+  .AboutName {
+    font-size: 28px;
+  }
+
+  .AboutHeading {
+    font-size: 32px;
+  }
+
+  .TimelineContainer {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .TimelineConnector {
+    display: none;
+  }
+
+  .StatsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .AboutPageContainer {
+    margin: 40px auto;
+    padding: 20px 15px;
+  }
+
+  .AboutMainSection {
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  .AvatarContainer {
+    width: 200px;
+    height: 200px;
+  }
+
+  .AboutName {
+    font-size: 24px;
+  }
+
+  .AboutHeading {
+    font-size: 24px;
+  }
+
+  .AboutHeading::after {
+    bottom: -5px;
+  }
+
+  .AboutBio {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .SectionTitle {
+    font-size: 24px;
+  }
+
+  .TimelineContainer {
+    padding: 20px;
+  }
+
+  .TimelineCard {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .TimelineIcon {
+    font-size: 32px;
+  }
+
+  .StatsGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .StatCard {
+    padding: 20px 15px;
+  }
+
+  .StatIcon {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .StatCard h3 {
+    font-size: 14px;
+  }
+
+  .SocialLinks {
+    gap: 15px;
+  }
+
+  .SocialButton {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
