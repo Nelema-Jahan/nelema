@@ -7,15 +7,6 @@ A React.js portfolio website of mine.
 - Node.js (v16 or higher)
 - npm
 
-### Install & Run
-```bash
-npm install
-npm start
-```
-Opens at `http://localhost:3000`
-
----
-
 
 ## 📁 Project Structure
 ```
