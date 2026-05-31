@@ -39,8 +39,4 @@ src/
     └── night-sky.json      # Background animation
 ```
 
-## ✏️ Personalisation
-- **LinkedIn URL**: Update in `Footer.js` and `Contact.js`
-- **Phone number**: Update in `Contact.js`
-- **Add projects**: Edit `Projects.js`
-- **Add skills**: Edit `About.js` and `Skills.js`
+
