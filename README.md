@@ -16,39 +16,6 @@ Opens at `http://localhost:3000`
 
 ---
 
-## 🌐 Deployment Options
-
-### Option 1: Netlify (Recommended — Free)
-1. Run `npm run build` to generate the `build/` folder
-2. Go to [netlify.com](https://netlify.com) → New site → Deploy manually
-3. Drag and drop the `build/` folder
-4. Done! You get a free `.netlify.app` URL
-
-**Or connect via GitHub:**
-1. Push this repo to GitHub
-2. Netlify → New site → Import from Git
-3. Build command: `npm run build`
-4. Publish directory: `build`
-
-### Option 2: Vercel (Free)
-1. Push to GitHub
-2. Go to [vercel.com](https://vercel.com) → New Project → Import repo
-3. Framework: Create React App (auto-detected)
-4. Click Deploy
-
-### Option 3: GitHub Pages
-1. `npm install --save-dev gh-pages`
-2. Add to `package.json`:
-   ```json
-   "homepage": "https://Nelema-Jahan.github.io/portfolio",
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d build"
-   }
-   ```
-3. Run `npm run deploy`
-
----
 
 ## 📁 Project Structure
 ```
